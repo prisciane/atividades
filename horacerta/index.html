@@ -1,0 +1,44 @@
+<?php
+
+date_default_timezone_set("Brazil/East");
+
+$dataAtual = getdate();
+
+echo $dataAtual["mday"];
+echo "/";
+echo $dataAtual["mon"];
+echo"/";
+echo $dataAtual["year"];
+echo " ";
+echo $dataAtual["hours"] -1;
+echo":";
+echo $dataAtual ["wday"];
+echo":";
+echo $dataAtual ["minutes"];
+     switch($dataAtual){
+            case 0:
+            echo " Domingo";
+            break;
+            case 1:
+            echo " Segunda-feira";
+            break;
+            case 2:
+            echo " Terca-feira";
+            break;
+            case 3:
+            echo " Quarta-feira";
+            break;
+            case 4:
+            echo " Qunta-feira";
+            break;
+            case 5:
+            echo " Sexta-feira";
+            break;
+            case 6:
+            echo " Sabado";
+     }       
+            
+
+?>
+
+
